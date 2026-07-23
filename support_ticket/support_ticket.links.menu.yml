@@ -1,0 +1,22 @@
+# User-facing navigation.
+support_ticket.collection:
+  title: 'Support tickets'
+  description: 'View and manage support tickets.'
+  route_name: entity.support_ticket.collection
+  menu_name: tools
+  weight: 10
+
+support_ticket.add_form:
+  title: 'Add ticket'
+  description: 'Submit a new support ticket.'
+  route_name: entity.support_ticket.add_form
+  parent: support_ticket.collection
+  weight: 0
+
+# Administrative listing under Content.
+support_ticket.admin:
+  title: 'Support tickets'
+  description: 'Administer all support tickets.'
+  route_name: entity.support_ticket.collection
+  parent: system.admin_content
+  weight: 10

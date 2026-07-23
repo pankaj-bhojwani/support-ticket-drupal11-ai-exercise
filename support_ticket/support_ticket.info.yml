@@ -1,0 +1,5 @@
+name: 'Support Ticket'
+type: module
+description: 'Provides a support ticket management system for users and administrators.'
+package: Custom
+core_version_requirement: ^11

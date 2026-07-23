@@ -1,0 +1,5 @@
+services:
+  support_ticket.ticket_manager:
+    class: Drupal\support_ticket\Service\TicketManager
+    arguments:
+      - '@logger.factory'

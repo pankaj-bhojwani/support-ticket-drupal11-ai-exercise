@@ -1,0 +1,11 @@
+entity.support_ticket.canonical:
+  title: 'View'
+  route_name: entity.support_ticket.canonical
+  base_route: entity.support_ticket.canonical
+  weight: 0
+
+entity.support_ticket.edit_form:
+  title: 'Edit'
+  route_name: entity.support_ticket.edit_form
+  base_route: entity.support_ticket.canonical
+  weight: 10

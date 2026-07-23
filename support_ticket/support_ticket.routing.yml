@@ -1,0 +1,54 @@
+entity.support_ticket.collection:
+  path: '/support/tickets'
+  defaults:
+    _entity_list: 'support_ticket'
+    _title: 'Support tickets'
+  requirements:
+    _permission: 'view own support tickets'
+
+entity.support_ticket.add_form:
+  path: '/support/tickets/add'
+  defaults:
+    _entity_form: 'support_ticket.add'
+    _title: 'Add support ticket'
+  requirements:
+    _entity_create_access: 'support_ticket'
+
+entity.support_ticket.canonical:
+  path: '/support/tickets/{support_ticket}'
+  defaults:
+    _entity_view: 'support_ticket.full'
+    _title_callback: '\Drupal\Core\Entity\Controller\EntityController::title'
+  requirements:
+    _entity_access: 'support_ticket.view'
+    support_ticket: '\d+'
+  options:
+    parameters:
+      support_ticket:
+        type: 'entity:support_ticket'
+
+entity.support_ticket.edit_form:
+  path: '/support/tickets/{support_ticket}/edit'
+  defaults:
+    _entity_form: 'support_ticket.edit'
+    _title: 'Edit support ticket'
+  requirements:
+    _entity_access: 'support_ticket.update'
+    support_ticket: '\d+'
+  options:
+    parameters:
+      support_ticket:
+        type: 'entity:support_ticket'
+
+entity.support_ticket.delete_form:
+  path: '/support/tickets/{support_ticket}/delete'
+  defaults:
+    _entity_form: 'support_ticket.delete'
+    _title: 'Delete support ticket'
+  requirements:
+    _entity_access: 'support_ticket.delete'
+    support_ticket: '\d+'
+  options:
+    parameters:
+      support_ticket:
+        type: 'entity:support_ticket'

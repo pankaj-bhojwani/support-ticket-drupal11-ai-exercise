@@ -1,0 +1,36 @@
+create support tickets:
+  title: 'Create support tickets'
+  description: 'Submit new support tickets.'
+
+view own support tickets:
+  title: 'View own support tickets'
+  description: 'View support tickets that the user created.'
+
+view any support tickets:
+  title: 'View any support tickets'
+  description: 'View all support tickets, regardless of who created them.'
+
+edit own support tickets:
+  title: 'Edit own support tickets'
+  description: 'Edit support tickets that the user created.'
+
+edit any support tickets:
+  title: 'Edit any support tickets'
+  description: 'Edit all support tickets, regardless of who created them.'
+
+delete any support tickets:
+  title: 'Delete any support tickets'
+  description: 'Delete any support ticket.'
+
+assign support tickets:
+  title: 'Assign support tickets'
+  description: 'Assign or reassign support tickets to a support agent.'
+
+change support ticket status:
+  title: 'Change support ticket status'
+  description: 'Update the workflow status of support tickets.'
+
+administer support tickets:
+  title: 'Administer support tickets'
+  description: 'Perform all administrative tasks for support tickets, including configuration and unrestricted management.'
+  restrict access: true

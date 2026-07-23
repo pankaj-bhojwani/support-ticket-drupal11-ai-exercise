@@ -1,0 +1,5 @@
+support_ticket.add_action:
+  route_name: entity.support_ticket.add_form
+  title: 'Add ticket'
+  appears_on:
+    - entity.support_ticket.collection
